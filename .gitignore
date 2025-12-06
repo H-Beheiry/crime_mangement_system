@@ -30,5 +30,5 @@ bin/
 
 ##Other
 /.idea
-.iml
-.ser
+*.iml
+*.ser
