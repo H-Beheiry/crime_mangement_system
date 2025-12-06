@@ -26,5 +26,5 @@ public class main {
 // TODO: add system admin dashboard
 // TODO: add officer dashboard
 // TODO: add signup
-// TODO: customize th gui
+// TODO: customize the gui
 

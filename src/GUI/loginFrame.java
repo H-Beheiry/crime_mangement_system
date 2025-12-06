@@ -4,6 +4,7 @@ import system_mangement.crimeSystem;
 import core_classes.policeOfficer;
 import javax.swing.*;
 import java.awt.*;
+import java.util.Arrays;
 
 public class loginFrame extends JFrame {
     private crimeSystem sys;
@@ -42,17 +43,17 @@ public class loginFrame extends JFrame {
             JOptionPane.showMessageDialog(this, "Login Successful! Welcome Admin.");
             new adminDashboard(sys).setVisible(true);
             this.dispose();
-            return;
         }
 
-        if (accessValidator.validateOfficerLogin(id, pass, sys)) {
+        else if (accessValidator.validateOfficerLogin(id, pass, sys)) {
             policeOfficer officer = accessValidator.getOfficer(id, sys);
             JOptionPane.showMessageDialog(this, "Login Successful! Welcome Officer");
             new officerDashboard(sys, officer).setVisible(true);
             this.dispose();
-            return;
         }
 
-        JOptionPane.showMessageDialog(this, "Invalid ID or Password.", "Login Error", JOptionPane.ERROR_MESSAGE);
+        else{
+            JOptionPane.showMessageDialog(this, "Invalid ID or Password.", "Login Error", JOptionPane.ERROR_MESSAGE);
+        }
     }
 }

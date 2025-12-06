@@ -5,7 +5,7 @@ import java.util.List;
 public class inputValidator {
     public static String validateBlank(String input){
         if (input.trim().isEmpty()){
-            throw  new  IllegalArgumentException("Cannot have input");
+            throw  new  IllegalArgumentException("Cannot have an empty input");
         }
         return input;
     }
