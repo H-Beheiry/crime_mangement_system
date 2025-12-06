@@ -1,4 +1,5 @@
 package GUI;
+import GUI.adminBoard.addDepartmentDashboard;
 import GUI.adminBoard.addOfficerDashboard;
 import system_mangement.crimeSystem;
 import javax.swing.*;
@@ -32,7 +33,8 @@ public class adminDashboard extends JFrame{
         this.dispose();
     }
 
-    public static void addDepartment(){
-        System.out.println("lol");
+    public void addDepartment(){
+        new addDepartmentDashboard(sys).setVisible(true);
+        this.dispose();
     }
 }

@@ -81,6 +81,7 @@ public class addOfficerDashboard extends JFrame {
             officerDepartment.addOfficer(o);
             sys.allOfficers.add(o);
             JOptionPane.showMessageDialog(this, "Officer Added Successfully");
+            backToMenu(sys);
         }
         catch (IllegalArgumentException e) {
             JOptionPane.showMessageDialog(this, "Error: " + e.getMessage(), "Validation Error", JOptionPane.ERROR_MESSAGE);
