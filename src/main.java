@@ -23,8 +23,8 @@ public class main {
         }
 }
 
-// TODO: add system admin dashboard
 // TODO: add officer dashboard
 // TODO: add signup
 // TODO: customize the gui
-
+// TODO: add view all officers and departments in admin dashboard
+// TODO: add view all associated criminals and all cases handel in officer dashboard

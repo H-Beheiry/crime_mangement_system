@@ -1,5 +1,4 @@
 package core_classes;
-import java.util.Arrays;
 import java.util.ArrayList;
 
 public class policeOfficer extends person {
@@ -31,6 +30,9 @@ public class policeOfficer extends person {
     }
     public void setSalary(int salary) {
         this.salary = salary;
+    }
+    public ArrayList<Case> getCases() {
+        return handledCases;
     }
 
     @Override

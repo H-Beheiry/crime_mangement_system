@@ -7,9 +7,9 @@ import java.awt.*;
 import java.util.Arrays;
 
 public class loginFrame extends JFrame {
-    private crimeSystem sys;
-    private JTextField idField;
-    private JPasswordField passField;
+    protected crimeSystem sys;
+    protected JTextField idField;
+    protected JPasswordField passField;
 
     public loginFrame(crimeSystem sys) {
         this.sys = sys;

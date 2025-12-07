@@ -1,12 +1,14 @@
 package GUI;
+import GUI.adminBoard.addCase;
 import GUI.adminBoard.addDepartmentDashboard;
 import GUI.adminBoard.addOfficerDashboard;
+import GUI.adminBoard.assignOfficerCase;
 import system_mangement.crimeSystem;
 import javax.swing.*;
 import java.awt.*;
 
 public class adminDashboard extends JFrame{
-    private crimeSystem sys;
+    protected crimeSystem sys;
 
     public adminDashboard(crimeSystem sys) {
         this.sys = sys;
@@ -15,16 +17,22 @@ public class adminDashboard extends JFrame{
         setTitle("Admin Dashboard");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        setLayout(new GridLayout(3, 3, 10, 10));
+        setLayout(new GridLayout(5, 1, 10, 10));
 
         JButton officerBtn = new JButton("Add Officer");
         JButton departmentBtn = new JButton("Add Department");
         JButton exitBtn = new JButton("Exit");
+        JButton addCaseBtn = new JButton("Add Case");
+        JButton assignCaseBtn = new JButton("Assign Case to Officer");
         add(officerBtn);
         add(departmentBtn);
+        add(addCaseBtn);
+        add(assignCaseBtn);
         add(exitBtn);
         officerBtn.addActionListener(e -> addOfficer());
         departmentBtn.addActionListener(e -> addDepartment());
+        addCaseBtn.addActionListener(e -> addCase());
+        assignCaseBtn.addActionListener(e -> assignCase());
         exitBtn.addActionListener(e -> System.exit(0));
     }
 
@@ -32,9 +40,16 @@ public class adminDashboard extends JFrame{
         new addOfficerDashboard(sys).setVisible(true);
         this.dispose();
     }
-
-    public void addDepartment(){
+    private void addDepartment(){
         new addDepartmentDashboard(sys).setVisible(true);
+        this.dispose();
+    }
+    private void addCase(){
+        new addCase(sys).setVisible(true);
+        this.dispose();
+    }
+    private void assignCase(){
+        new assignOfficerCase(sys).setVisible(true);
         this.dispose();
     }
 }

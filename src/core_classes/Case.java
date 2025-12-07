@@ -28,10 +28,6 @@ public class Case implements Serializable {
         this.department= department;
     }
 
-    public department getDepartment() {
-        return department;
-    }
-
     public void addUpdate(String updatedate, String updateDescription) {
         updatesdates.add(updatedate);
         updateDescriptions.add(updateDescription);
@@ -54,5 +50,23 @@ public class Case implements Serializable {
     @Override
     public String toString() {
         return name;
+    }
+    public String getCaseID() {
+        return caseID;
+    }
+    public String getName() {
+        return name;
+    }
+    public String getDescription() {
+        return description;
+    }
+    public String getCrimeType() {
+        return crimeType;
+    }
+    public String getStartDate() {
+        return startDate;
+    }
+    public department getDepartment() {
+        return department;
     }
 }
