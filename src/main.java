@@ -4,7 +4,8 @@ import system_mangement.*;
 
 public class main {
     public static void main(String[] args) {
-            crimeSystem sys = fileProcesser.loadSystem();
+        GUI.ThemeManager.applyTheme();
+        crimeSystem sys = fileProcesser.loadSystem();
 
             if (sys.allAdmins.isEmpty()) {
                 System.out.println("WARNING: System is empty. Please check console to add an Admin manually if needed.");
@@ -24,7 +25,6 @@ public class main {
 }
 
 // TODO: add officer dashboard
-// TODO: add signup
 // TODO: customize the gui
 // TODO: add view all officers and departments in admin dashboard
-// TODO: add view all associated criminals and all cases handel in officer dashboard
+// TODO: add populate system class

@@ -17,6 +17,9 @@ public class criminal extends person {
     public ArrayList<Case> getCasesInvolved() {
         return casesInvolved;
     }
+    public String getID(){
+        return ID;
+    }
 
     @Override
     public void get_person_info(){
@@ -33,5 +36,6 @@ public class criminal extends person {
             newCase.assignCriminal(this);
         }
     }
+
 
 }

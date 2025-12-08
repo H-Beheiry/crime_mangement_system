@@ -1,5 +1,6 @@
 package GUI.adminBoard;
 import GUI.adminDashboard;
+import GUI.officerDashboard;
 import core_classes.department;
 import core_classes.policeOfficer;
 import system_mangement.crimeSystem;

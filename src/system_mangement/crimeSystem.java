@@ -17,20 +17,4 @@ public class crimeSystem implements Serializable {
         this.allCases = new ArrayList<>();
         this.allCriminals = new ArrayList<>();
     }
-
-    public void addDepartment(department d) {
-        allDepartments.add(d);
-    }
-    public void addAdmin(systemAdmin a) {
-        allAdmins.add(a);
-    }
-    public void addPolice(policeOfficer p) {
-        allOfficers.add(p);
-    }
-    public void addCase(Case c) {
-        allCases.add(c);
-    }
-    public void addCriminals(criminal c){
-        allCriminals.add(c);
-    }
 }
