@@ -26,13 +26,16 @@ public class assignOfficerCase extends JFrame {
         add(new JLabel("  Officer ID:"));
         officerIdField= new JTextField();
         add(officerIdField);
-        add(new JLabel("  Department ID:"));
+        add(new JLabel("  Case ID:"));
         CaseIdField= new JTextField();
         add(CaseIdField);
 
         JButton addCaseBtn= new JButton("Assign Case");
         add(addCaseBtn);
         addCaseBtn.addActionListener(e -> assignCase(sys));
+        JButton backBtn= new JButton("Back to Menu");
+        add(backBtn);
+        backBtn.addActionListener(e -> backToMenu(sys));
     }
 
     private void assignCase(crimeSystem sys){

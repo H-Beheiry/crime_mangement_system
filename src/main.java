@@ -9,22 +9,21 @@ public class main {
 
             if (sys.allAdmins.isEmpty()) {
                 System.out.println("WARNING: System is empty. Please check console to add an Admin manually if needed.");
-                systemAdmin admin= new systemAdmin("admin","a001",20, "password");
-                sys.allAdmins.add(admin);
+                sys= populateSystem.populateSystemData();
             }
 
+            final crimeSystem finalSys= sys;
+
             java.awt.EventQueue.invokeLater(() -> {
-                new loginFrame(sys).setVisible(true);
+                new loginFrame(finalSys).setVisible(true);
             });
 
             Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-                fileProcesser.saveSystem(sys);
+                fileProcesser.saveSystem(finalSys);
                 System.out.println("System Saved.");
             }));
         }
 }
 
 // TODO: add officer dashboard
-// TODO: customize the gui
-// TODO: add view all officers and departments in admin dashboard
-// TODO: add populate system class
+// TODO: add the white border from the officer dashboard stuff (final polish)

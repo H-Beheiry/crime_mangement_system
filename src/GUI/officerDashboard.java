@@ -1,5 +1,6 @@
 package GUI;
 import GUI.officerBoard.*;
+import GUI.officerBoard.updateCriminal.updateCriminalDashboard;
 import system_mangement.crimeSystem;
 import core_classes.policeOfficer;
 import javax.swing.*;
@@ -23,7 +24,7 @@ public class officerDashboard extends JFrame{
 
         JButton viewHandledCasesBtn= new JButton("View My Cases");
         JButton UpdateCaseBtn= new JButton("Update Case");
-        JButton searchCaseRecordBtn= new JButton("search Case Record");
+        JButton searchCaseRecordBtn= new JButton("Search Case Record");
         JButton addCriminalBtn= new JButton("Add Criminal");
         JButton searchCriminalBtn= new JButton("Search Criminal");
         JButton updateCriminalBtn= new JButton("Update Criminal Record");

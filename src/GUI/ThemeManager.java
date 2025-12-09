@@ -1,7 +1,5 @@
 package GUI;
 import javax.swing.*;
-import javax.swing.border.EmptyBorder;
-import javax.swing.plaf.ColorUIResource;
 import java.awt.*;
 
 public class ThemeManager {
@@ -35,11 +33,6 @@ public class ThemeManager {
             UIManager.put("defaultFont", mainFont);
             UIManager.put("Label.font", mainFont);
             UIManager.put("TextField.font", mainFont);
-            UIManager.put("TextField.background", WHITE);
-            UIManager.put("TextField.border", BorderFactory.createCompoundBorder(
-                    BorderFactory.createLineBorder(new Color(200, 200, 200)),
-                    new EmptyBorder(8, 10, 8, 10)
-            ));
 
             // --- BUTTON PAINTERS (THE FIX) ---
 

@@ -54,16 +54,16 @@ public class addCriminalDashboard extends JFrame {
     }
     private void addCriminal (crimeSystem sys){
         try {
-            String name = inputValidator.validateBlank(nameField.getText());
-            String id = inputValidator.validateBlank(idField.getText());
-            int age = inputValidator.validateAge(ageField.getText());
-            String currentLocation = inputValidator.validateBlank(currentLocationField.getText());
-            String dangerLevel = inputValidator.validateBlank(dangerLevelField.getText());
-            dangerLevel = inputValidator.validateDangerLevel(dangerLevel);
+            String name= inputValidator.validateBlank(nameField.getText());
+            String id= inputValidator.validateBlank(idField.getText());
+            int age= inputValidator.validateAge(ageField.getText());
+            String currentLocation= inputValidator.validateBlank(currentLocationField.getText());
+            String dangerLevel= inputValidator.validateBlank(dangerLevelField.getText());
+            dangerLevel= inputValidator.validateDangerLevel(dangerLevel);
 
             for (criminal c : sys.allCriminals){
                 if (c.getID().equals(id)){
-                    throw new IllegalArgumentException("Department ID " + id + " does not exist in the system.");
+                    throw new IllegalArgumentException("Criminal ID: " + id + " already exist in the system.");
                 }
             }
             //    criminal (int age, String name, String ID, String currentLocation, String dangerLevel)

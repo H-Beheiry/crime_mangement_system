@@ -16,11 +16,12 @@ public class addOfficerDashboard extends JFrame {
     public addOfficerDashboard(crimeSystem sys) {
         this.sys = sys;
 
-        setSize(400, 300);
+        setSize(600, 400);
         setTitle("Adding Officer Dashboard");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        setLayout(new GridLayout(10, 1, 10, 10));
+        setLayout(new GridLayout(9, 1, 10, 10));
+        ((JPanel)getContentPane()).setBorder(BorderFactory.createEmptyBorder(20, 60, 20, 60));
 
         add(new JLabel("  Officer Name:"));
         nameField = new JTextField();
