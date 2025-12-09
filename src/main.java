@@ -7,6 +7,7 @@ public class main {
         GUI.ThemeManager.applyTheme();
         crimeSystem sys = fileProcesser.loadSystem();
 
+
             if (sys.allAdmins.isEmpty()) {
                 System.out.println("WARNING: System is empty. Please check console to add an Admin manually if needed.");
                 sys= populateSystem.populateSystemData();

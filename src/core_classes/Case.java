@@ -69,4 +69,13 @@ public class Case implements Serializable {
     public department getDepartment() {
         return department;
     }
+    public String getID() {
+        return caseID;
+    }
+    public ArrayList<String> getUpdateDates() {
+        return updatesdates;
+    }
+    public ArrayList<String> getUpdateDescriptions() {
+        return updateDescriptions;
+    }
 }
