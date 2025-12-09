@@ -20,6 +20,18 @@ public class criminal extends person {
     public String getID(){
         return ID;
     }
+    public String getCurrentLocation() {
+        return currentLocation;
+    }
+    public String  getDangerLevel() {
+        return dangerLevel;
+    }
+    public String  getName(){
+        return name;
+    }
+    public int  getAge(){
+        return age;
+    }
     public void setLocation(String location){
         this.currentLocation = location;
     }

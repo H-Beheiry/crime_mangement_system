@@ -35,7 +35,7 @@ public class updateCriminalDescription extends JFrame {
         dangerLevelField= new JTextField();
         add(dangerLevelField);
 
-        JButton UpdateBtn= new JButton("Update Criminal record ");
+        JButton UpdateBtn= new JButton("Update");
         add(UpdateBtn);
         UpdateBtn.addActionListener(e -> updateDescription(sys,officer));
         JButton backBtn= new JButton("Back to Menu");
