@@ -1,7 +1,7 @@
 package core_classes;
 
 public class systemAdmin extends person {
-    protected String password;
+    private final String password;
     public systemAdmin(String name,String id,int age, String password) {
         super(name,id,age);
         this.password = password;

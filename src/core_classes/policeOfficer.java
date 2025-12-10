@@ -3,10 +3,10 @@ import java.util.ArrayList;
 
 public class policeOfficer extends person {
     private int salary;
-    protected String phoneNumber;
-    protected department department;
-    protected ArrayList<Case> handledCases;
-    protected String password;
+    private final String phoneNumber;
+    private final department department;
+    private ArrayList<Case> handledCases;
+    private final String password;
 
     public policeOfficer(int salary, String phoneNumber, department department, int age, String name, String ID, String password) {
         super(name,ID,age);
@@ -29,7 +29,7 @@ public class policeOfficer extends person {
         return department;
     }
     public void setSalary(int salary) {
-        this.salary = salary;
+        this.salary= salary;
     }
     public ArrayList<Case> getCases() {
         return handledCases;
@@ -40,7 +40,7 @@ public class policeOfficer extends person {
         System.out.println("Name: "+ name);
         System.out.println("ID: "+ ID);
         System.out.println("Age: "+ age);
-        System.out.println("Department: "+ department.name + "ID: " + department.departmentID);
+        System.out.println("Department: "+ department.getName() + "ID: " + department.getDepartmentID());
         System.out.println("Handled cases: "+ handledCases);
         System.out.println("Phone number: "+ phoneNumber);
     }

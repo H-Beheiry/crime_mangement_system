@@ -4,16 +4,16 @@ import java.util.Arrays;
 import java.util.ArrayList;
 
 public class Case implements Serializable {
-    protected String caseID;
-    protected String name;
-    protected String description;
-    protected String crimeType;
-    protected ArrayList<criminal> criminalsInvolved;
-    protected ArrayList<policeOfficer> officersInvolved;
-    protected String startDate;
-    protected ArrayList<String> updatesdates;
-    protected ArrayList<String> updateDescriptions;
-    protected department department;
+    private final String caseID;
+    private final String name;
+    private final String description;
+    private final String crimeType;
+    private ArrayList<criminal> criminalsInvolved;
+    private ArrayList<policeOfficer> officersInvolved;
+    private final String startDate;
+    private ArrayList<String> updatesdates;
+    private ArrayList<String> updateDescriptions;
+    private final department department;
 
     public Case(String caseID, String crimeType, String description, String name, String startDate, department department) {
         this.caseID= caseID;

@@ -3,15 +3,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class criminal extends person {
-    protected String currentLocation;
-    protected ArrayList<Case> casesInvolved;
-    protected String dangerLevel;
+    private String currentLocation;
+    private ArrayList<Case> casesInvolved;
+    private String dangerLevel;
 
     public criminal (int age, String name, String ID, String currentLocation, String dangerLevel) {
         super(name,ID,age);
-        this.currentLocation = currentLocation;
-        this.casesInvolved = new ArrayList<>();
-        this.dangerLevel = dangerLevel;
+        this.currentLocation= currentLocation;
+        this.casesInvolved= new ArrayList<>();
+        this.dangerLevel= dangerLevel;
     }
 
     public ArrayList<Case> getCasesInvolved() {
@@ -32,11 +32,12 @@ public class criminal extends person {
     public int  getAge(){
         return age;
     }
+
     public void setLocation(String location){
-        this.currentLocation = location;
+        this.currentLocation= location;
     }
     public void setDangerLevel(String level){
-        this.dangerLevel = level;
+        this.dangerLevel= level;
     }
 
     @Override
@@ -54,6 +55,4 @@ public class criminal extends person {
             newCase.assignCriminal(this);
         }
     }
-
-
 }
