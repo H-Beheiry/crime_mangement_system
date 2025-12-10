@@ -3,7 +3,7 @@ package system_mangement;
 import java.io.*;
 
 public class fileProcesser {
-    private static final String FILE_PATH = "crime_system_data.ser";
+    private static final String FILE_PATH= "crime_system_data.ser";
 
     public static crimeSystem loadSystem() {
         File file = new File(FILE_PATH);

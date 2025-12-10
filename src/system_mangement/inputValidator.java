@@ -28,21 +28,21 @@ public class inputValidator {
     }
 
     public static int validateSalary(String input){
-        int salary = validateInteger(input);
+        int salary= validateInteger(input);
         if (salary<0){
             throw  new  IllegalArgumentException("Salary must be a positive integer");
         }
         return salary;
     }
     public static String validatePhone(String input){
-        String phone = validateBlank(input);
+        String phone= validateBlank(input);
         if (!phone.matches("\\d+")) {
             throw new IllegalArgumentException("Phone Number must contain digits only.");
         }
         return phone;
     }
     public static String validateDangerLevel(String input){
-        String dangerLevel = validateBlank(input).toLowerCase();
+        String dangerLevel= validateBlank(input).toLowerCase();
         List<String> valid= Arrays.asList("low","moderate","high","very high");
         if (!valid.contains(dangerLevel)){
             throw new IllegalArgumentException("Danger Level must be \"low\",\"moderate\",\"high\",\"very high\".");

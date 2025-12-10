@@ -11,10 +11,10 @@ public class crimeSystem implements Serializable {
     public ArrayList<criminal> allCriminals;
 
     public crimeSystem(){
-        this.allAdmins = new ArrayList<>();
-        this.allDepartments = new ArrayList<>();
-        this.allOfficers = new ArrayList<>();
-        this.allCases = new ArrayList<>();
-        this.allCriminals = new ArrayList<>();
+        this.allAdmins= new ArrayList<>();
+        this.allDepartments= new ArrayList<>();
+        this.allOfficers= new ArrayList<>();
+        this.allCases= new ArrayList<>();
+        this.allCriminals= new ArrayList<>();
     }
 }

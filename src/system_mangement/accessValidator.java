@@ -42,7 +42,7 @@ public class accessValidator {
         if (officer == null || crim == null) {
             return false;
         }
-        String officerDeptID = officer.getDepartment().getDepartmentID();
+        String officerDeptID= officer.getDepartment().getDepartmentID();
         for (Case c : crim.getCasesInvolved()) {
             if (c.getDepartment().getDepartmentID().equals(officerDeptID)) {
                 return true;
