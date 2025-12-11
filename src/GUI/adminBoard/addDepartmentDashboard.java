@@ -1,10 +1,8 @@
 package GUI.adminBoard;
-
 import GUI.adminDashboard;
 import core_classes.department;
 import system_mangement.crimeSystem;
 import system_mangement.inputValidator;
-
 import javax.swing.*;
 import java.awt.*;
 import java.text.SimpleDateFormat;
@@ -22,7 +20,8 @@ public class addDepartmentDashboard extends JFrame {
         setTitle("Adding Department Dashboard");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        setLayout(new GridLayout(5, 1, 10, 10));
+        setLayout(new GridLayout(4, 1, 10, 10));
+        ((JPanel)getContentPane()).setBorder(BorderFactory.createEmptyBorder(20, 60, 20, 60));
 
         add(new JLabel("  Department Name:"));
         nameField = new JTextField();
@@ -46,12 +45,12 @@ public class addDepartmentDashboard extends JFrame {
         BackBtn.addActionListener(e -> backToMenu(sys));
     }
 
-    public void backToMenu(crimeSystem sys){
+    private void backToMenu(crimeSystem sys){
         new adminDashboard(sys).setVisible(true);
         this.dispose();
     }
 
-    public void addDepartment(crimeSystem sys){
+    private void addDepartment(crimeSystem sys){
         try {
             String name= inputValidator.validateBlank(nameField.getText());
             String id= inputValidator.validateBlank(idField.getText());

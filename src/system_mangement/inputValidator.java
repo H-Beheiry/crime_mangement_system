@@ -36,8 +36,8 @@ public class inputValidator {
     }
     public static String validatePhone(String input){
         String phone= validateBlank(input);
-        if (!phone.matches("\\d+")) {
-            throw new IllegalArgumentException("Phone Number must contain digits only.");
+        if (!phone.matches("\\d+") && phone.length()==11) {
+            throw new IllegalArgumentException("Phone Number must contain digits only, and equals 11 digits");
         }
         return phone;
     }

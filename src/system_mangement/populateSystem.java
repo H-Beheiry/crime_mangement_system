@@ -14,19 +14,19 @@ public class populateSystem {
         sys.allAdmins.add(adminTwo);
 
         policeOfficer officer1= new policeOfficer(
-                60000, "5550001", centralDept, 30, "John Doe", "OFF001", "pass001"
+                60000, "55500010000", centralDept, 30, "John Doe", "OFF001", "pass001"
         );
         policeOfficer officer2= new policeOfficer(
-                62000, "5550002", centralDept, 32, "Jane Roe", "OFF002", "pass002"
+                62000, "55500020000", centralDept, 32, "Jane Roe", "OFF002", "pass002"
         );
         policeOfficer officer3= new policeOfficer(
-                64000, "5550003", centralDept, 35, "Michael Lee", "OFF003", "pass003"
+                64000, "55500030000", centralDept, 35, "Michael Lee", "OFF003", "pass003"
         );
         policeOfficer officer4= new policeOfficer(
-                66000, "5550004", centralDept, 38, "Sarah Davis", "OFF004", "pass004"
+                66000, "55500040000", centralDept, 38, "Sarah Davis", "OFF004", "pass004"
         );
         policeOfficer officer5= new policeOfficer(
-                68000, "5550005", centralDept, 40, "Chris Wilson", "OFF005", "pass005"
+                68000, "55500050000", centralDept, 40, "Chris Wilson", "OFF005", "pass005"
         );
 
         sys.allOfficers.add(officer1);

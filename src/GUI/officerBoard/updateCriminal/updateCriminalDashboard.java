@@ -13,11 +13,11 @@ public class updateCriminalDashboard extends JFrame {
         this.sys = sys;
         this.officer = officer;
 
-        setSize(400, 300);
+        setSize(400, 400);
         setTitle("Update Criminal Dashboard");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        setLayout(new GridLayout(4, 3, 10, 10));
+        setLayout(new GridLayout(4, 2, 10, 10));
         ((JPanel)getContentPane()).setBorder(BorderFactory.createEmptyBorder(20, 60, 20, 60));
 
         JButton updateCriminalDescriptionBtn= new JButton("Update Description");

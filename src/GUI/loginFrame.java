@@ -4,7 +4,7 @@ import system_mangement.crimeSystem;
 import core_classes.policeOfficer;
 import javax.swing.*;
 import java.awt.*;
-import java.util.Arrays;
+
 
 public class loginFrame extends JFrame {
     protected crimeSystem sys;
@@ -15,10 +15,11 @@ public class loginFrame extends JFrame {
         this.sys = sys;
 
         setTitle("Crime Management System - Login");
-        setSize(400, 250);
+        setSize(500, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        setLayout(new GridLayout(4, 2, 10, 10));
+        setLayout(new GridLayout(3, 2, 10, 10));
+        ((JPanel)getContentPane()).setBorder(BorderFactory.createEmptyBorder(20, 60, 20, 60));
 
         add(new JLabel("  User ID:"));
         idField = new JTextField();

@@ -19,11 +19,12 @@ public class addCriminalDashboard extends JFrame {
         this.sys = sys;
         this.officer = officer;
 
-        setSize(400, 300);
+        setSize(450, 300);
         setTitle("Adding Criminal Dashboard");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        setLayout(new GridLayout(7, 1, 10, 10));
+        setLayout(new GridLayout(6, 1, 10, 10));
+        ((JPanel) getContentPane()).setBorder(BorderFactory.createEmptyBorder(20, 60, 20, 60));
 
         add(new JLabel("  Criminal Name:"));
         nameField= new JTextField();

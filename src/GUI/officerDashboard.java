@@ -15,7 +15,7 @@ public class officerDashboard extends JFrame{
         this.officer= officer;
 
 
-        setSize(400, 300);
+        setSize(500, 400);
         setTitle("Officer Dashboard");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);

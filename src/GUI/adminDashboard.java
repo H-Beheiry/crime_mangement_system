@@ -13,11 +13,13 @@ public class adminDashboard extends JFrame{
     public adminDashboard(crimeSystem sys) {
         this.sys = sys;
 
-        setSize(400, 300);
+        setSize(500, 300);
         setTitle("Admin Dashboard");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new GridLayout(5, 1, 10, 10));
+        ((JPanel)getContentPane()).setBorder(BorderFactory.createEmptyBorder(20, 60, 20, 60));
+
 
         JButton officerBtn = new JButton("Add Officer");
         JButton departmentBtn = new JButton("Add Department");

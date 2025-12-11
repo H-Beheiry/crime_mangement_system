@@ -1,6 +1,5 @@
 package GUI.adminBoard;
 import GUI.adminDashboard;
-import GUI.officerDashboard;
 import core_classes.department;
 import core_classes.policeOfficer;
 import system_mangement.crimeSystem;
@@ -54,12 +53,12 @@ public class addOfficerDashboard extends JFrame {
 
     }
 
-    public void backToMenu(crimeSystem sys){
+    private void backToMenu(crimeSystem sys){
         new adminDashboard(sys).setVisible(true);
         this.dispose();
     }
 
-    public void addOfficer(crimeSystem sys) {
+    private void addOfficer(crimeSystem sys) {
         try {
             String name = inputValidator.validateBlank(nameField.getText());
             String id = inputValidator.validateBlank(idField.getText());

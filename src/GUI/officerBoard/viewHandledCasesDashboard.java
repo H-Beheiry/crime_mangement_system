@@ -49,7 +49,7 @@ public class viewHandledCasesDashboard extends JFrame {
         add(BackBtn, BorderLayout.SOUTH);
 
     }
-    public void back(){
+    private void back(){
         new officerDashboard(sys, officer).setVisible(true);
         this.dispose();
     }

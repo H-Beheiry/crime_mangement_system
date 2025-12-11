@@ -84,7 +84,7 @@ public class searchCaseRecordDashboard extends JFrame {
         descArea.setLineWrap(true);
         descArea.setWrapStyleWord(true);
         descArea.setEditable(false);
-        descArea.setOpaque(false); // Make it look like a label
+        descArea.setOpaque(false);
         detailsFrame.add(new JScrollPane(descArea));
         String lastUpdateDate = "No updates recorded";
         String lastUpdateDesc = "N/A";

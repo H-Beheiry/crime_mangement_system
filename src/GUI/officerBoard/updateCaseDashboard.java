@@ -1,5 +1,4 @@
 package GUI.officerBoard;
-import GUI.officerBoard.updateCriminal.updateCriminalDashboard;
 import GUI.officerDashboard;
 import core_classes.Case;
 import core_classes.policeOfficer;

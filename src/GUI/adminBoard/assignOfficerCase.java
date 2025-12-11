@@ -1,11 +1,9 @@
 package GUI.adminBoard;
 import GUI.adminDashboard;
 import core_classes.Case;
-import core_classes.department;
 import core_classes.policeOfficer;
 import system_mangement.crimeSystem;
 import system_mangement.inputValidator;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -17,11 +15,12 @@ public class assignOfficerCase extends JFrame {
     public assignOfficerCase(crimeSystem sys){
         this.sys= sys;
 
-        setSize(400, 300);
+        setSize(400, 200);
         setTitle("Assigning Case Dashboard");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        setLayout(new GridLayout(4, 1, 10, 10));
+        setLayout(new GridLayout(3, 1, 10, 10));
+        ((JPanel)getContentPane()).setBorder(BorderFactory.createEmptyBorder(20, 60, 20, 60));
 
         add(new JLabel("  Officer ID:"));
         officerIdField= new JTextField();
