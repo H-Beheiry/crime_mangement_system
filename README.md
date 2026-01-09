@@ -32,7 +32,7 @@ This system allows law enforcement administrators to manage sensitive data regar
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/H-Beheiry/crime_mangement_system.git](https://github.com/H-Beheiry/crime_mangement_system.git)
+    git clone https://github.com/H-Beheiry/crime_mangement_system.git
     ```
 2.  **Navigate to the project directory**
     ```bash
